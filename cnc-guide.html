@@ -1,85 +1,26 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Intro to CNC Milling — Deep Dive — Deep Dive</title>
-<link rel="stylesheet" href="styles.css">
-
-<style>
-.fig{background:#fff;border:1px solid #e5e7eb;border-radius:14px;box-shadow:0 12px 28px rgba(0,0,0,.08);padding:16px;margin:18px 0}
-.subgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-@media(max-width:900px){.subgrid{grid-template-columns:1fr}}
-.callout{background:#fef6e7;border:1px solid #f6d28f;border-radius:12px;padding:14px}
-hr{border:0;border-top:1px solid #e5e7eb;margin:28px 0}
-.note{color:#6b7280;font-size:14px}
-.video-wrap{position:relative;width:100%;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid #e5e7eb;background:#000}
-.video-wrap a{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:700}
-.video-wrap a:hover{text-decoration:underline}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid #e5e7eb;box-shadow:0 8px 18px rgba(0,0,0,.06)}
-@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.gallery{grid-template-columns:1fr}}
-.kicker{font-weight:700;color:#375a7f;text-transform:uppercase;letter-spacing:.08em;font-size:12px}
-</style>
-
-</head><body>
-<header class="header"><div class="container nav">
-<div class="brand"><div class="logo">MEH</div><div class="brand-text"><h1>Machining Education Hub</h1><p>Learn. Build. Innovate.</p></div></div>
-<nav><a href="index.html">Home</a><a href="about.html">About</a><a href="learn.html">Learn</a><a href="community.html">Opportunities</a><a href="contact.html">Contact</a></nav>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Intro to CNC Milling — Deep Dive — Deep Dive</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="header"><div class="container nav">
+  <div class="brand"><div class="logo">MEH</div>
+    <div class="brand-text"><h1>Machining Education Hub</h1><p>Learn. Build. Innovate.</p></div>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="learn.html">Learn</a>
+    <a href="community.html">Opportunities</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </div></header>
 <section class="hero"><div class="container">
   <div class="kicker">Deep Dive</div>
   <h2>Intro to CNC Milling — Deep Dive</h2>
-  <p>This chapter connects coordinate systems, workholding, and chip load into a safe first cut.</p>
-  <a class="cta" href="learn.html">Back to Learn</a>
+  <p class="lead">Connect coordinate systems, workholding, and chip load into a safe first cut.</p>
+  <a class="button" href="learn.html">Back to Learn</a>
+  <a class="cta" target="_blank" href="https://www.youtube.com/results?search_query=CNC%20milling%20basics%20for%20beginners">Open videos on YouTube</a>
 </div></section>
-
-<section class="section"><div class="container">
-  <h3>Watch: curated training</h3>
-  <div class="video-wrap">
-    <a target="_blank" href="https://www.youtube.com/results?search_query=CNC%20milling%20basics%20for%20beginners">Open topic playlist on YouTube</a>
-  </div>
-  <p class="note">Tip: open in a new tab so you can follow along while reading.</p>
-</div></section>
-
-<section class="section"><div class="container">
-        <h3>Coordinates and offsets</h3>
-        <div class='fig'><p>Machine coordinates define the home of the machine. Work coordinates (G54–G59) place your part inside that space. Touch off tools to a known reference and set your work offset to the stock corner or center as planned in CAM.</p></div>
-        </div></section>
-        <section class="section"><div class="container">
-        <h3>Workholding choices</h3>
-        <div class='subgrid'>
-   <div class='fig'><h4>Vise with parallels</h4><p>Great for rectangular stock. Keep at least 3 mm grip and deburr edges for better clamping.</p></div>
-   <div class='fig'><h4>Clamps and soft jaws</h4><p>Use strap clamps for odd shapes or make soft jaws to fit. Always prove clearance in CAM and dry run.</p></div>
-   </div>
-        </div></section>
-        <section class="section"><div class="container">
-        <h3>Feeds, speeds, and chip load</h3>
-        <div class='fig'><p>Choose spindle speed and feed per tooth based on cutter diameter, material, and flute count. Use a calculator as a starting point, then listen for stable cutting and check chips. Blue chips or smoke mean adjust immediately.</p></div>
-        </div></section>
-        <section class="section"><div class="container">
-        <h3>Safe prove‑out</h3>
-        <div class='fig'><p>Single‑block, air‑cut above stock, and verify with dye or scribe. Keep a clear plan for stopping if anything looks wrong.</p></div>
-        </div></section>
-        
-
-<section class="section"><div class="container">
-  <h3>Photo references</h3>
-  <div class="gallery">
-    <img src="images/cnc1.jpg" alt="cnc1.jpg"><img src="images/cnc2.jpg" alt="cnc2.jpg"><img src="images/cnc3.jpg" alt="cnc3.jpg">
-  </div>
-</div></section>
-
-<section class="section"><div class="container">
-  <div class="callout">
-    <strong>Keep learning:</strong>
-    <ul>
-      <li>Search OSHA / NIOSH resources for authoritative safety guidance.</li>
-      <li>Check your school’s written shop policies and follow your instructor’s directions.</li>
-      <li>Practice with a mentor, then teach a friend — teaching cements knowledge.</li>
-    </ul>
-  </div>
-  <a href="learn.html" class="cta">Back to modules</a>
-</div></section>
-
-<footer><div class="container"><p>&copy; 2025 Machining Education Hub — built by Jazlyn Price</p></div></footer>
-</body></html>
+<section class="section"><div class="container grid-2"><div class='card'><h3>Coordinates and offsets</h3><p>Machine coordinates define the home of the machine. Work coordinates (G54–G59) place your part inside that space. Touch off tools and set your work offset to match the CAM plan.</p></div><div class='card'><h3>Workholding choices</h3><p>Vise with parallels for rectangular stock; strap clamps for odd shapes; soft jaws for repeat work. Always prove clearance in CAM and dry run.</p></div><div class='card'><h3>Feeds, speeds, chip load</h3><p>Pick spindle speed and feed per tooth based on cutter diameter, material, and flute count. Use a calculator to start, then tune by sound and chip color/shape.</p></div><div class='card'><h3>Safe prove‑out</h3><p>Air‑cut above stock, single‑block, and keep a hand on feed hold. Stop the process the moment something looks off.</p></div></div></section>
+<footer class="footer"><div class="container">
+  &copy; 2025 Machining Education Hub — built by Jazlyn Price
+</div></footer></body></html>

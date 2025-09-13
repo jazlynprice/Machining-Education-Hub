@@ -1,49 +1,30 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Machining Education Hub</title>
-<link rel="stylesheet" href="styles.css">
-</head><body>
-<header class="header">
-  <div class="container nav">
-    <div class="brand">
-      <div class="logo">MEH</div>
-      <div class="brand-text">
-        <h1>Machining Education Hub</h1>
-        <p>Learn. Build. Innovate.</p>
-      </div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="learn.html">Learn</a>
-      <a href="community.html">Opportunities</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact — Machining Education Hub</title><link rel="stylesheet" href="styles.css"></head>
+<body><header class="header"><div class="container nav">
+  <div class="brand"><div class="logo">MEH</div>
+    <div class="brand-text"><h1>Machining Education Hub</h1><p>Learn. Build. Innovate.</p></div>
   </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <div class="kicker">Say hello</div>
-    <h2>Contact</h2>
-    <p>Have ideas or want to mentor? Send a note. This simple form opens your email app to send directly.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container form">
-    <form action="mailto:j.aprice@outlook.com" method="post" enctype="text/plain">
-      <label for="name">Name</label>
-      <input id="name" name="name" placeholder="Your name">
-      <label for="email">Email</label>
-      <input id="email" name="email" placeholder="you@example.com">
-      <label for="msg">Message</label>
-      <textarea id="msg" name="message" rows="6" placeholder="How can we help?"></textarea>
-      <button class="button submit" type="submit">Send</button>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="learn.html">Learn</a>
+    <a href="community.html">Opportunities</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div></header>
+<section class="hero"><div class="container"><div class="kicker">Contact</div>
+<h2>Say hi</h2><p class="lead">Have an opportunity or want to collaborate? Send a note.</p></div></section>
+<section class="section"><div class="container">
+  <div class="card">
+    <form name="contact" method="post" action="https://formspree.io/f/xzblrlkn">
+      <label>Name<br><input name="name" required style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px"></label><br><br>
+      <label>Email<br><input type="email" name="email" required style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px"></label><br><br>
+      <label>Message<br><textarea name="message" rows="5" required style="width:100%;padding:10px;border:1px solid var(--border);border-radius:10px"></textarea></label><br><br>
+      <button class="cta" type="submit">Send</button>
     </form>
   </div>
-</section>
-
-<footer><div class="container"><p>&copy; 2025 Machining Education Hub — built by Jazlyn Price</p></div></footer>
-</body></html>
+</div></section>
+<footer class="footer"><div class="container">
+  &copy; 2025 Machining Education Hub — built by Jazlyn Price
+</div></footer></body></html>

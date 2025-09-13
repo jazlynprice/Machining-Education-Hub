@@ -1,51 +1,66 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Learn — Machining Education Hub</title>
-<link rel="stylesheet" href="styles.css">
-</head><body>
-<header class="header">
-  <div class="container nav">
-    <div class="brand">
-      <div class="logo">MEH</div>
-      <div class="brand-text">
-        <h1>Machining Education Hub</h1>
-        <p>Learn. Build. Innovate.</p>
-      </div>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="learn.html">Learn</a>
-      <a href="community.html">Opportunities</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<link rel="stylesheet" href="styles.css"></head>
+<body><header class="header"><div class="container nav">
+  <div class="brand"><div class="logo">MEH</div>
+    <div class="brand-text"><h1>Machining Education Hub</h1><p>Learn. Build. Innovate.</p></div>
   </div>
-</header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="learn.html">Learn</a>
+    <a href="community.html">Opportunities</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div></header>
+<section class="hero"><div class="container">
+  <div class="kicker">Learn</div>
+  <h2>Pick a track or jump into a module</h2>
+  <p class="lead">Each module has a quick overview, a project, and a deep dive. Use the buttons below to jump to a category.</p>
+  <div>
+    <a class="button" href="#safety">Go to Safety</a>
+    <a class="button" href="#cnc">Go to CNC</a>
+    <a class="button" href="#metrology">Go to Metrology</a>
+  </div>
+</div></section>
 
-<section class="hero">
-  <div class="container">
-    <div class="kicker">Learning paths</div>
-    <h2>Pick a module and dive in</h2>
-    <p>Each module opens on its own page with a simple outline, practice project, and checklist you can follow in any school shop.</p>
+<section class="section" id="safety"><div class="container">
+  <span class="badge">Safety</span>
+  <h2>Safety and Shop Fundamentals</h2>
+  <div class="grid-2">
+    <div class="card"><h3>PPE essentials</h3><p>How to choose and use eye, hearing, hand, and foot protection in a machine shop.</p>
+      <a class="button" href="ppe.html">Open module</a><a class="button secondary" href="ppe-guide.html">Deep dive</a></div>
+    <div class="card"><h3>Lockout/Tagout basics</h3><p>Control hazardous energy with devices, tags, and verification before maintenance or setup.</p>
+      <a class="button" href="lockout.html">Open module</a><a class="button secondary" href="lockout-guide.html">Deep dive</a></div>
+    <div class="card"><h3>Housekeeping and pathways</h3><p>Chips, coolant, and clutter cost time and quality. Build fast cleanup habits.</p>
+      <a class="button" href="housekeeping.html">Open module</a><a class="button secondary" href="housekeeping-guide.html">Deep dive</a></div>
+    <div class="card"><h3>Startup and shutdown</h3><p>Checklists and recovery techniques that protect people and equipment.</p>
+      <a class="button" href="startup.html">Open module</a><a class="button secondary" href="startup-guide.html">Deep dive</a></div>
   </div>
-</section>
+</div></section>
 
-<section class="section">
-  <div class="container list-buttons">
-    <a href="ppe.html">🦺 Personal protective equipment and why it matters</a>
-    <a href="lockout.html">🔒 Lockout / Tagout basics</a>
-    <a href="housekeeping.html">🧹 Housekeeping and safe pathways</a>
-    <a href="startup.html">🚦 Machine startup and shutdown checklists</a>
-    <a href="cnc.html">🧰 Intro to CNC milling</a>
-    <a href="metrology.html">📏 Metrology and quality</a>
-    <a href="cadcam.html">💻 CAD → CAM pathway</a>
+<section class="section" id="cnc"><div class="container">
+  <span class="badge">CNC</span>
+  <h2>CNC: From setup to first part</h2>
+  <div class="grid-2">
+    <div class="card"><h3>Intro to CNC milling</h3><p>Coordinates, workholding options, and chip load for a safe first cut.</p>
+      <a class="button" href="cnc.html">Open module</a><a class="button secondary" href="cnc-guide.html">Deep dive</a></div>
+    <div class="card"><h3>CAD → CAM pathway</h3><p>Sketch, model, generate toolpaths, simulate, and post code.</p>
+      <a class="button" href="cadcam.html">Open module</a><a class="button secondary" href="cadcam-guide.html">Deep dive</a></div>
   </div>
-</section>
+</div></section>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Machining Education Hub — built by Jazlyn Price</p>
+<section class="section" id="metrology"><div class="container">
+  <span class="badge">Metrology</span>
+  <h2>Measure and improve</h2>
+  <div class="grid-2">
+    <div class="card"><h3>Metrology basics</h3><p>Use calipers and micrometers well, understand tolerance and finish, and record results.</p>
+      <a class="button" href="metrology.html">Open module</a><a class="button secondary" href="metrology-guide.html">Deep dive</a></div>
   </div>
-</footer>
-</body></html>
+</div></section>
+
+<footer class="footer"><div class="container">
+  &copy; 2025 Machining Education Hub — built by Jazlyn Price
+</div></footer></body></html>
