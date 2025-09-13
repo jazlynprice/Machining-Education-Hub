@@ -3,47 +3,79 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CAD → CAM Pathway — Deep Dive</title>
 <link rel="stylesheet" href="styles.css">
+
+<style>
+.fig{background:#fff;border:1px solid #e5e7eb;border-radius:14px;box-shadow:0 12px 28px rgba(0,0,0,.08);padding:16px;margin:18px 0}
+.subgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:900px){.subgrid{grid-template-columns:1fr}}
+.callout{background:#fef6e7;border:1px solid #f6d28f;border-radius:12px;padding:14px}
+hr{border:0;border-top:1px solid #e5e7eb;margin:28px 0}
+.note{color:#6b7280;font-size:14px}
+.video-wrap{position:relative;width:100%;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid #e5e7eb;background:#000}
+.video-wrap a{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:700}
+.video-wrap a:hover{text-decoration:underline}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid #e5e7eb;box-shadow:0 8px 18px rgba(0,0,0,.06)}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}}
+.kicker{font-weight:700;color:#375a7f;text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+</style>
+
 </head><body>
-<header class="header"><div class="container nav"><div class="brand"><div class="logo">MEH</div><div class="brand-text"><h1>Machining Education Hub</h1><p>Learn. Build. Innovate.</p></div></div><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="learn.html">Learn</a><a href="community.html">Opportunities</a><a href="contact.html">Contact</a></nav></div></header>
-<section class="hero">
-  <div class="container">
-    <div class="kicker">Deep Dive</div>
-    <h2>CAD → CAM Pathway</h2>
-    <p>A beginner pipeline from sketch to verified toolpaths.</p>
-    <a class="cta" href="learn.html">Back to Learn</a>
-  </div>
-</section>
+<header class="header"><div class="container nav">
+<div class="brand"><div class="logo">MEH</div><div class="brand-text"><h1>Machining Education Hub</h1><p>Learn. Build. Innovate.</p></div></div>
+<nav><a href="index.html">Home</a><a href="about.html">About</a><a href="learn.html">Learn</a><a href="community.html">Opportunities</a><a href="contact.html">Contact</a></nav>
+</div></header>
+<section class="hero"><div class="container">
+  <div class="kicker">Deep Dive</div>
+  <h2>CAD → CAM Pathway</h2>
+  <p>Turn an idea into a part: sketch, model, plan toolpaths, simulate, and verify on the machine.</p>
+  <a class="cta" href="learn.html">Back to Learn</a>
+</div></section>
 
-<section class="section">
-  <div class="container">
-    <h3>Watch</h3>
-    <p>Curated videos for this topic:</p>
-    <a class="button" target="_blank" href="https://www.youtube.com/results?search_query=Fusion%20360%20CAD%20to%20CAM%20beginner%20workflow">Open on YouTube</a>
+<section class="section"><div class="container">
+  <h3>Watch: curated training</h3>
+  <div class="video-wrap">
+    <a target="_blank" href="https://www.youtube.com/results?search_query=Fusion%20360%20CAD%20to%20CAM%20beginner%20workflow">Open topic playlist on YouTube</a>
   </div>
-</section>
+  <p class="note">Tip: open in a new tab so you can follow along while reading.</p>
+</div></section>
 
-<section class="section">
-  <div class="container grid-2">
-    <div class="card">
-      <h3>What you will learn (explained)</h3>
-      <ul>
-        <li>Sketch constraints and dimensions that drive models</li><li>Setup, tools, and heights in CAM to avoid crashes</li><li>Simulation and verification before posting code</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Project walkthrough</h3>
-      <ol>
-        <li>Design a nameplate with text cutout</li><li>Create contour and pocket toolpaths and simulate</li><li>Export G‑code and prepare a safe prove‑out plan</li>
-      </ol>
-    </div>
-  </div>
-</section>
+<section class="section"><div class="container">
+        <h3>Sketching that drives models</h3>
+        <div class='fig'><p>Constrain geometry fully. Dimensions should express design intent — for example, set a slot width to match fastener size rather than arbitrary numbers.</p></div>
+        </div></section>
+        <section class="section"><div class="container">
+        <h3>CAM setups and heights</h3>
+        <div class='subgrid'>
+   <div class='fig'><h4>Stock and zero</h4><p>Match stock size and choose a zero you can probe repeatably. Keep clearance heights safe but not wastefully high.</p></div>
+   <div class='fig'><h4>Tools and holders</h4><p>Pick realistic stick‑out and holder geometry in CAM so collision checks mean something.</p></div>
+   </div>
+        </div></section>
+        <section class="section"><div class="container">
+        <h3>Simulation and prove‑out</h3>
+        <div class='fig'><p>Simulate for collisions and gouges. In the shop, run high‑Z air cuts, then step down carefully. Log the final feeds and speeds that worked so the next run is faster.</p></div>
+        </div></section>
+        
 
-<section class="section">
-  <div class="container">
-    <a href="learn.html" class="cta">Back to modules</a>
+<section class="section"><div class="container">
+  <h3>Photo references</h3>
+  <div class="gallery">
+    <img src="images/cadcam1.jpg" alt="cadcam1.jpg"><img src="images/cadcam2.jpg" alt="cadcam2.jpg"><img src="images/cadcam3.jpg" alt="cadcam3.jpg">
   </div>
-</section>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="callout">
+    <strong>Keep learning:</strong>
+    <ul>
+      <li>Search OSHA / NIOSH resources for authoritative safety guidance.</li>
+      <li>Check your school’s written shop policies and follow your instructor’s directions.</li>
+      <li>Practice with a mentor, then teach a friend — teaching cements knowledge.</li>
+    </ul>
+  </div>
+  <a href="learn.html" class="cta">Back to modules</a>
+</div></section>
 
 <footer><div class="container"><p>&copy; 2025 Machining Education Hub — built by Jazlyn Price</p></div></footer>
 </body></html>

@@ -3,47 +3,79 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Metrology and Quality — Deep Dive</title>
 <link rel="stylesheet" href="styles.css">
+
+<style>
+.fig{background:#fff;border:1px solid #e5e7eb;border-radius:14px;box-shadow:0 12px 28px rgba(0,0,0,.08);padding:16px;margin:18px 0}
+.subgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:900px){.subgrid{grid-template-columns:1fr}}
+.callout{background:#fef6e7;border:1px solid #f6d28f;border-radius:12px;padding:14px}
+hr{border:0;border-top:1px solid #e5e7eb;margin:28px 0}
+.note{color:#6b7280;font-size:14px}
+.video-wrap{position:relative;width:100%;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid #e5e7eb;background:#000}
+.video-wrap a{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-weight:700}
+.video-wrap a:hover{text-decoration:underline}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid #e5e7eb;box-shadow:0 8px 18px rgba(0,0,0,.06)}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}}
+.kicker{font-weight:700;color:#375a7f;text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+</style>
+
 </head><body>
-<header class="header"><div class="container nav"><div class="brand"><div class="logo">MEH</div><div class="brand-text"><h1>Machining Education Hub</h1><p>Learn. Build. Innovate.</p></div></div><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="learn.html">Learn</a><a href="community.html">Opportunities</a><a href="contact.html">Contact</a></nav></div></header>
-<section class="hero">
-  <div class="container">
-    <div class="kicker">Deep Dive</div>
-    <h2>Metrology and Quality</h2>
-    <p>Measure accurately and document results others can trust.</p>
-    <a class="cta" href="learn.html">Back to Learn</a>
-  </div>
-</section>
+<header class="header"><div class="container nav">
+<div class="brand"><div class="logo">MEH</div><div class="brand-text"><h1>Machining Education Hub</h1><p>Learn. Build. Innovate.</p></div></div>
+<nav><a href="index.html">Home</a><a href="about.html">About</a><a href="learn.html">Learn</a><a href="community.html">Opportunities</a><a href="contact.html">Contact</a></nav>
+</div></header>
+<section class="hero"><div class="container">
+  <div class="kicker">Deep Dive</div>
+  <h2>Metrology and Quality</h2>
+  <p>If you can’t measure it, you can’t make it repeatably. Good measurements are consistent, documented, and tied to the drawing.</p>
+  <a class="cta" href="learn.html">Back to Learn</a>
+</div></section>
 
-<section class="section">
-  <div class="container">
-    <h3>Watch</h3>
-    <p>Curated videos for this topic:</p>
-    <a class="button" target="_blank" href="https://www.youtube.com/results?search_query=calipers%20micrometer%20how%20to%20measure">Open on YouTube</a>
+<section class="section"><div class="container">
+  <h3>Watch: curated training</h3>
+  <div class="video-wrap">
+    <a target="_blank" href="https://www.youtube.com/results?search_query=calipers%20micrometer%20how%20to%20measure">Open topic playlist on YouTube</a>
   </div>
-</section>
+  <p class="note">Tip: open in a new tab so you can follow along while reading.</p>
+</div></section>
 
-<section class="section">
-  <div class="container grid-2">
-    <div class="card">
-      <h3>What you will learn (explained)</h3>
-      <ul>
-        <li>Zeroing and measuring with calipers and micrometers</li><li>Understanding tolerance, fit, and surface finish symbols</li><li>Designing a simple inspection plan for student projects</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Project walkthrough</h3>
-      <ol>
-        <li>Pick three features on a sample part to measure</li><li>Record nominal, tolerance, and three trials each</li><li>Summarize pass/fail and what would improve consistency</li>
-      </ol>
-    </div>
-  </div>
-</section>
+<section class="section"><div class="container">
+        <h3>Instrument basics</h3>
+        <div class='subgrid'>
+   <div class='fig'><h4>Calipers</h4><p>Versatile but lower resolution. Zero before use, apply gentle pressure, and measure twice from different orientations.</p></div>
+   <div class='fig'><h4>Micrometers</h4><p>Higher resolution for critical features. Use the ratchet stop for consistent torque. Keep standards clean.</p></div>
+   </div>
+        </div></section>
+        <section class="section"><div class="container">
+        <h3>Tolerance and finish</h3>
+        <div class='fig'><p>Read drawing tolerances carefully. A part can be in‑tolerance and still perform poorly if surface finish is rough — match finish to function.</p></div>
+        </div></section>
+        <section class="section"><div class="container">
+        <h3>Inspection plans</h3>
+        <div class='fig'><p>List features to check, instruments to use, and acceptable ranges. Record nominal, tolerance, and actual measurements. If a dimension drifts, adjust your process, not the numbers.</p></div>
+        </div></section>
+        
 
-<section class="section">
-  <div class="container">
-    <a href="learn.html" class="cta">Back to modules</a>
+<section class="section"><div class="container">
+  <h3>Photo references</h3>
+  <div class="gallery">
+    <img src="images/metro1.jpg" alt="metro1.jpg"><img src="images/metro2.jpg" alt="metro2.jpg"><img src="images/metro3.jpg" alt="metro3.jpg">
   </div>
-</section>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="callout">
+    <strong>Keep learning:</strong>
+    <ul>
+      <li>Search OSHA / NIOSH resources for authoritative safety guidance.</li>
+      <li>Check your school’s written shop policies and follow your instructor’s directions.</li>
+      <li>Practice with a mentor, then teach a friend — teaching cements knowledge.</li>
+    </ul>
+  </div>
+  <a href="learn.html" class="cta">Back to modules</a>
+</div></section>
 
 <footer><div class="container"><p>&copy; 2025 Machining Education Hub — built by Jazlyn Price</p></div></footer>
 </body></html>
